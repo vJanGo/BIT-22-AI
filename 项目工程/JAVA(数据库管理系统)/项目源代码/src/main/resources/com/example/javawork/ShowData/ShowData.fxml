@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.cell.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javawork.ShowData.ShowDataController">
+   <children>
+      <Pagination fx:id="pagination" layoutY="-6.0" prefHeight="800.0" prefWidth="1200.0" />
+      <TableView fx:id="dataTable" layoutX="1.0" layoutY="26.0" prefHeight="634.0" prefWidth="1200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+        <columns>
+            <TableColumn fx:id="selectionColumn" prefWidth="30.0">
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Button layoutX="243.0" layoutY="756.0" mnemonicParsing="false" onAction="#gotoonepage" text="goto" />
+      <TextField fx:id="pageInputField" layoutX="51.0" layoutY="756.0" prefHeight="30.0" prefWidth="192.0" promptText="input..." />
+      <Button fx:id="Download" layoutX="878.0" layoutY="756.0" mnemonicParsing="false" onAction="#Download" text="Download" textFill="#d01515" />
+      <Button layoutX="792.0" layoutY="756.0" mnemonicParsing="false" onAction="#openFileChooser" text="Direction" textFill="#b419da" />
+      <Button layoutX="972.0" layoutY="756.0" mnemonicParsing="false" onAction="#BatchDownload" text="Batch Download" textFill="#8e9024" />
+   </children>
+</AnchorPane>

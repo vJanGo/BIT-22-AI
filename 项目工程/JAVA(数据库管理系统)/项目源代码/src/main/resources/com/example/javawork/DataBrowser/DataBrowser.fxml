@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javawork.DataBrowser.DataBrowserController">
+   <children>
+      <Button layoutX="58.0" layoutY="126.0" mnemonicParsing="false" onAction="#ShowData" prefHeight="64.0" prefWidth="167.0" text="Display" textFill="#d71616">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="341.0" layoutY="126.0" mnemonicParsing="false" onAction="#openFileSelector" prefHeight="64.0" prefWidth="181.0" text="Input" textFill="#d71616">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="SearchData" layoutX="671.0" layoutY="126.0" mnemonicParsing="false" onAction="#SearchData" prefHeight="64.0" prefWidth="181.0" text="Search" textFill="#d71616">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="AnalyzeData" layoutX="961.0" layoutY="126.0" mnemonicParsing="false" onAction="#AnalyzeData" prefHeight="64.0" prefWidth="181.0" text="Analyze" textFill="#d71616">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="353.0" layoutY="83.0" prefHeight="30.0" prefWidth="271.0" text="Please Select One Database " textFill="#bc20e8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Line endX="1100.0" layoutX="101.0" layoutY="63.0" startX="-100.0" />
+      <Label layoutX="304.0" layoutY="14.0" text="Welcome to Protein database!!!" textFill="#1b57e0">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="1041.0" layoutY="216.0" text="designed by vJanGo" textFill="#654949" />
+      <ChoiceBox fx:id="databaseChoiceBox" layoutX="644.0" layoutY="83.0" prefWidth="150.0" onMouseClicked="#onChoiceBoxClicked"/>
+
+   </children>
+</AnchorPane>

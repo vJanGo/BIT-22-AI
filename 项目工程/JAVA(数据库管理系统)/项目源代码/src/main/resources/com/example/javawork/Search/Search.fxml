@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javawork.Search.SearchController">
+   <children>
+      <ChoiceBox fx:id="KeywordChoiceBox" layoutX="226.0" layoutY="136.0" prefWidth="150.0" />
+      <Label layoutX="203.0" layoutY="90.0" prefHeight="30.0" prefWidth="210.0" text="Please Select One Keyword" textFill="#4019dd" />
+      <Label layoutX="189.0" layoutY="176.0" prefHeight="30.0" prefWidth="238.0" text="Please enter your search term" textFill="#ee1111" />
+      <TextField fx:id="SerachTerm" layoutX="56.0" layoutY="214.0" prefHeight="36.0" prefWidth="493.0" promptText="     input...     (Please separate different search terms with Spaces)" />
+      <Button fx:id="Search" layoutX="267.0" layoutY="267.0" mnemonicParsing="false" onAction="#Search" prefHeight="36.0" prefWidth="68.0" text="Search" textFill="#7f12b5" />
+      <Line endX="500.0" layoutX="101.0" layoutY="65.0" startX="-100.0" />
+      <Label layoutX="142.0" layoutY="14.0" prefHeight="42.0" prefWidth="331.0" text="Protein Database Search" textFill="#4019dd">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Line endX="500.0" layoutX="102.0" layoutY="361.0" startX="-100.0" AnchorPane.bottomAnchor="60.0" />
+      <Label layoutX="220.0" layoutY="359.0" text="Protein database" textFill="#7c2b86">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="exactMatch" layoutX="348.0" layoutY="267.0" mnemonicParsing="false" onAction="#exactMatch" prefHeight="36.0" prefWidth="189.0" text="Accuracy">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

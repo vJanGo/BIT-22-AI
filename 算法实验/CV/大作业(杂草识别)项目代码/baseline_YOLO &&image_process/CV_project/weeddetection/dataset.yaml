@@ -1,0 +1,10 @@
+# dataset path
+path: /home/steve1111/CV_project/weeddetection/datasets
+train: images/train
+val: images/val
+
+# number of classes
+nc: 2
+
+# class names
+names: ['weed','crop']

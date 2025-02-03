@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Oct 30 16:11:55 2024
+# Process ID: 25760
+# Current directory: C:/Users/vJanGo/Desktop/bitAI/Grade3Autumn/计组/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12276 C:\Users\vJanGo\Desktop\bitAI\Grade3Autumn\计组\project_1\project_1.xpr
+# Log file: C:/Users/vJanGo/Desktop/bitAI/Grade3Autumn/计组/project_1/vivado.log
+# Journal file: C:/Users/vJanGo/Desktop/bitAI/Grade3Autumn/计组/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/vJanGo/Desktop/bitAI/Grade3Autumn/计组/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+source mytest.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+close_sim
+launch_simulation
+source mytest.tcl
+add_bp {C:/Users/vJanGo/Desktop/bitAI/Grade3Autumn/计组/project_1/project_1.srcs/sim_1/new/mytest.v} 73
+remove_bps -file {C:/Users/vJanGo/Desktop/bitAI/Grade3Autumn/计组/project_1/project_1.srcs/sim_1/new/mytest.v} -line 73
+close_sim
+launch_simulation
+source mytest.tcl
+close_sim
+launch_simulation
+source mytest.tcl
+close_sim
